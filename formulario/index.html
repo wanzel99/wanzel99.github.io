@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Formulário</title>
     <style>
-        div { width: '100%'}
+        div {
+            width: 100%; 
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
@@ -50,14 +53,34 @@
             <label for="url">URL / Link</label>
             <input type='url' id="url" name="url"
                 placeholder="https://meusite.com.br" />
-        </div>   
-
+        </div>  
         
         <div>
             <label for="dataLancamento">Data de Lançamento</label>
             <input type='date' id="url" name="dataLancamento" />
         </div>   
+        
+        <div>
+            <label for="mes">Mês</label>
+            <input type='month' id="mes" name="mes" />
+        </div>   
+        
+        <div>
+            <label for="semana">Semana</label>
+            <input type='week' id="semana" name="semana" />
+        </div>   
+        
+        <div>
+            <label for="hora">Hora</label>
+            <input type='time' id="hora" name="hora" />
+        </div>  
+        
+        <div>
+            <input type='hidden' id="usuarioLogado" name="usuarioLogado" value="khyquer" />
+        </div>   
 
         <button type="submit">Enviar</button>
-       </form>
-      <body>    
+
+    </form>
+</body>
+</html>
