@@ -16,8 +16,20 @@
     <form method="post" action="https://formtester.goodbytes.be/post.php">
         <fieldset>
             <label for="nomeMusica">Nome da Música</label>
-            <input type='text' id="nomeMusica" name="nomeMusica"
+            <input type='text' id="nomeMusica" name="nomeMusica" required
                 placeholder="Someone like you"/>
+        </fieldset>
+        <fieldset>
+            <label for="avaliacao">Nota artista</label>
+            
+            <label for="avaliacaoOtimo">Otimo</label>
+            <input type='radio' name="avaliacao" id="avaliacaoOtimo" />
+
+            <label for="avaliacaoMedio">Médio</label>
+            <input type='radio' name="avaliacao" id="avaliacaoMedio" />
+
+            <label for="avaliacaoFraco">Fraco</label>
+            <input type='radio' name="avaliacao" id="avaliacaoFraco" />
         </fieldset>
         <div>
             <label for="nomeArtista">Nome do Artista</label>
@@ -31,7 +43,7 @@
         </div>  
         <div>
             <label for="email">E-mail da gravadora</label>
-            <input type='email' id="email" name="email"
+            <input type='email' id="email" name="email" required
                 placeholder="teste@dominio.com.br" />
         </div>
         
@@ -63,20 +75,18 @@
         <div>
             <label for="mes">Mês</label>
             <input type='month' id="mes" name="mes" />
-        </div>   
-        
+        </div>           
         <div>
             <label for="semana">Semana</label>
             <input type='week' id="semana" name="semana" />
-        </div>   
-        
+        </div>           
         <div>
             <label for="hora">Hora</label>
-            <input type='time' id="hora" name="hora" />
-        </div>  
-        
+            <input type='time' id="hora" name="hora" required />
+        </div>          
         <div>
-            <input type='hidden' id="usuarioLogado" name="usuarioLogado" value="khyquer" />
+            <input type='hidden' id="usuarioLogado" name="usuarioLogado" 
+                value="khyquer" />
         </div>   
 
         <button type="submit">Enviar</button>
